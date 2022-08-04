@@ -1,11 +1,75 @@
 .App {
   text-align: center;
+  background-image: url(https://cssanimation.rocks/demo/starwars/images/bg.jpg);
+  
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
+
+/* Css Inicio */
+/* Navbar */
+.navbar {
+  background: rgb(2,0,36);
+  background-image: url(https://cssanimation.rocks/demo/starwars/images/bg.jpg);
+  position: fixed !important;
+  z-index: 100;
+  width: 100%;
+}
+.tx-nav{
+  color: white !important;
+}
+
+
+/* Slider */
+.slider {
+width: 1600px !important; 
+margin: 0 auto;
+}
+
+/* Texto */
+.tx-titulo {
+  -webkit-text-stroke: 1px #FFDE06;
+  color: transparent;
+  font-size: 90px;
+}
+.texto {
+  color: white;
+  padding: 100px 20px 20px 20px;
+  font-size: 18px;
+}
+
+
+/* Card */
+.tarjetas {
+  gap: 12px;
+  padding: 20px;
+}
+.tj-body {
+  background: #f1e382;
+  background: linear-gradient(0deg, #fae873 0%, rgba(246,244,240,1) 100%);
+}
+.card-text {
+  height: 136px;
+  
+}
+
+/* Footer */
+footer {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  margin-top: 100px;
+}
+
+.tx-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Css Fin */
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
