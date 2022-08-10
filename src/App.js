@@ -1,7 +1,8 @@
 import './App.css';
-import Home from './Home';
+import Home from './Page/Home/Home';
+import Personajes from './Page/Personajes/Personajes';
+import Planetas from './Page/Planetas/Planetas';
 import { Routes, Route, Link } from "react-router-dom";
-import { Games } from './components/Games';
 import NavScrollExample from './components/Navbar/Navbar';
 
 function App() {
@@ -10,7 +11,8 @@ function App() {
       <NavScrollExample/>
         <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/games" element={<Games />} />
+        <Route path="/personajes" element={<Personajes />} />
+        <Route path="/planetas" element={<Planetas />} />
       </Routes>
     </div>
   )
