@@ -21,8 +21,8 @@ function NavScrollExample() {
             navbarScroll
           >
             <Nav.Link href="/" className='tx-nav'>Inicio</Nav.Link>
-            <Nav.Link href="/personajes" className='tx-nav'>Personajes</Nav.Link>
-            <Nav.Link href="/planetas" className='tx-nav'>Planetas</Nav.Link>
+            <Nav.Link href="/Personajes" className='tx-nav'>Personajes</Nav.Link>
+            <Nav.Link href="/Planetas" className='tx-nav'>Planetas</Nav.Link>
 
             <NavDropdown title="Categoria" id="navbarScrollingDropdown tx-nav" className='text-light'>
               <NavDropdown.Item href="#action3">Acción</NavDropdown.Item>

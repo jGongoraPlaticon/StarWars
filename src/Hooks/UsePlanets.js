@@ -1,7 +1,7 @@
-import { useState } from 'react';
+import { useState } from 'react'
 
-export const UsePerson = () => {
-  const [dataPerson, setDataPerson] = useState([]);
+export const UsePlanets = () => {
+  const [dataPlanets, setDataPlanets] = useState([]);
   const [Contador, setContador] = useState(1);
 
   const disminuir = () => {
@@ -12,33 +12,34 @@ export const UsePerson = () => {
     }
   };
   const aumentar = () => {
-    if (Contador < 9) {
+    if (Contador < 6) {
       setContador(Contador + 1);
     } else {
-      setContador(9);
+      setContador(6);
     }
   };
 
-  const getAllPerson = async (numberPage) => {
+  const getAllPlanets = async (numberPage) => {
     try {
       var requestOptions = {
         method: "GET",
         redirect: "follow",
       };
       await fetch(
-        `https://swapi.dev/api/people/?page=${numberPage}`,
+        `https://swapi.dev/api/planets/?page=${numberPage}`,
         requestOptions
       )
         .then((response) => response.json())
-        .then((result) => setDataPerson(result.results))
+        .then((result) => setDataPlanets(result.results))
         .catch((error) => console.log("error", error));
     } catch (error) {
       console.log(error);
     }
   };
+
   return {
-    getAllPerson,
-    dataPerson,
+    getAllPlanets,
+    dataPlanets,
     Contador,
     aumentar,
     disminuir,

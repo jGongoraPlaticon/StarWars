@@ -53,9 +53,15 @@ margin: 0 auto;
 }
 .card-text {
   height: 136px;
-  
 }
-
+.tarjetas-planets {
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: wrap;
+  gap: 12px;
+  padding: 20px;
+  margin: 0 auto;
+}
 /* Footer */
 footer {
   background-color: black;
